@@ -5,8 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Position Property</title>
+    <style>
+        body,html {
+            height: 100%;
+            margin:0;
+            padding:0;
+        }
+        body{
+            height: 400%;
+            background-color: skyblue;
+        }    
+        #boxOne{
+            height: 100px;
+            width: 100px;
+            background-color: slateblue;
+            padding: 10px;
+            position:static;
+        }
+        #boxTwo{
+            height: 15px;
+            width: 100%;
+            background-color: snow;
+            padding: 10px;
+            position:fixed;
+            bottom: 10%;
+            left: 0px;
+        }
+        .abs-box{
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+            padding: 10px;
+            /*position: relative;*/
+        }
+        .abs-child{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            padding: 10px;
+            position: absolute;
+            right:10px;
+            top: 10px;
+        }
+        .rel-box{
+            width: 250px;
+            height: 250px;
+            background-color: yellowgreen;
+            padding: 10px;
+            position: relative;
+        }
+        .rel-child{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            padding: 10px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="boxOne">
+        <div class="box-child">position: static (default, on the page, when scrolled it goes away.)</div>
+    </div>
+    <div id="boxTwo">
+        <div class="box-child">position: fixed (fixed like post it on screen, when scrolled it's fixed.)</div>
+    </div>
+    <div class="abs-box"> 
+        <div class="abs-child">position: absolute (If not with father relative, it will align itself to the body.)</div>
+    </div>
+    <div class="rel-box">
+        <div class="rel-child">position; relative (brings position absolute to it's relative.)</div>
+    </div>
 </body>
 </html>
