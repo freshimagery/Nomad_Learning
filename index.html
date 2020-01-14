@@ -15,6 +15,10 @@
     h1 {
         margin: 30px;
         color:powderblue;
+        transition: color .5s ease-in-out;
+    }
+    h1:hover{
+        color:paleturquoise;
     }
     .mainbox {
         padding: 30px;
@@ -25,7 +29,7 @@
         display: flex;
         background-color:seashell;
         color:cadetblue;
-        margin: 5px 1px;
+        margin: 1px 1px;
         padding: 20px;
         height: 100px;
         width: 100px;
@@ -34,6 +38,32 @@
     }
     .box:nth-child(2n+1) {
         background-color: lightsteelblue;
+    }
+    .box:hover{
+        background-color:orange;
+    }
+    .box:active{
+        background-color:lightseagreen;
+    }
+    .advancebox {
+        padding: 30px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .a-box{
+        display: flex;
+        background-color: lightpink;
+        margin: 1px 1px;
+        padding: 20px;
+        height: 200px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out;
+    }
+    .a-box:hover{
+        background-color:lightcoral;
+        margin-right: 240px;
     }
     </style>
 </head>
@@ -46,6 +76,14 @@
         <div class="box"><a href="flexbox.html">Flexbox</a></div>
         <div class="box"><a href="selectors.html">Selectors</a></div>
         <div class="box"><a href="elementstates.html">Element States</a></div>
+    </div>
+
+    <div class="advancebox">
+        <div class="a-box"><a href="transitions.html">Transitions</a></div>
+        <div class="a-box"></div>
+        <div class="a-box"></div>
+        <div class="a-box"></div>
+        <div class="a-box"></div>
     </div>
 </body>
 </html>
