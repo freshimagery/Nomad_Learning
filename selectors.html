@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectors</title>
+    <style>
+    html,body{
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input[type="submit"]{
+        background-color: skyblue;
+    }
+    input[type="password"]{
+        background-color:powderblue;
+    }
+    input{
+        border:1px solid darkcyan;
+    }
+    input[required="required"]{
+        background-color:darksalmon;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:pink;
+        display:block;
+        height: 200px;
+        width: 200px;
+        border: 1px solid papayawhip;
+        padding: 20px;
+    }
+    .box:nth-child(2n){
+        background-color:lightsteelblue;
+    }
+    .box:last-child{
+        background-color:grey;
+        padding: 20px;
+ 
+    }
+    .box-child {
+        width: 40px;
+        height: 40px;
+        background-color: mediumpurple;
+    }
+    </style>
+</head>
+<body>
+    <h3>Selectors and Pseudo Selectors</h3>
+    <div class="container">
+        <div class="box">to change input type when no access to main css> input[type="ooo"]{
+            background-color: ooo;</div>
+        <div class="box">to change certain box regardless of the box css > .box:nth-child(o){
+            background-color:ooo;</div>
+        <div class="box">
+            <input type="password" required="required">
+            <input type="submit">
+        </div>
+        <div class="box">
+            <div class="box-child"></div>
+        </div>
+        <div class="box">can select them by type, order, direct child</div>
+        <div class="box">practice selectors: <a href="http://www.topdesignagencies.com/nth-test/">nth-test</a></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
