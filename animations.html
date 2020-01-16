@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animations</title>
+</head>
+    <style>
+        .fatherbox{
+            display:flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100px;
+            width:100px;
+            background-color:darkkhaki;
+            animation: 5s scaleAndRotateSquare infinite ease-in-out;
+        }
+        @keyframes scaleAndRotateSquare {
+            0%{
+                transform:none;
+                color:khaki;
+            }
+            50%{
+                transform: rotate(1turn) scale(3,3);
+                color:white;
+            }
+            100%{
+                transform:none;
+                color:khaki;
+            }
+        }
+    </style>
+<body>
+    <div class="fatherbox">
+    <div class="box">@keyframes identifier</div>
+    </div>
+</body>
+</html>
