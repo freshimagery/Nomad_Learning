@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transformations</title>
+</head>
+    <style>
+        .box{
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background-color:cadetblue;
+            color: white;
+            justify-content:center;
+            align-items:center;
+            transition: transform .5s ease-in-out;
+        }
+        .box:hover{
+            transform: rotate(1turn) scale(.5, .5)
+        }
+    </style>
+<body>
+    <div class="box">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">CSS Transform</a>
+    </div>
+</body>
+</html>
